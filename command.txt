@@ -1,0 +1,15 @@
+(pyautogui) bt@hpe:~/PycharmProjects/pyautogui/a$ git config --global credential.helper "cache --timeout 36000"
+sudo unbuffer strace -p`ps aux | grep -v grep| grep a_c_1.py | awk '{print $2}'` -s9999 -e write -s 120|grep "^write(1,"
+
+git commit -am "clean"
+
+[get images back]
+(base) bt@cog:~/deploy/py/pyautogui$ git add images/
+(base) bt@cog:~/deploy/py/pyautogui$ git commit -m "images"
+(base) bt@cog:~/deploy/py/pyautogui$ git push
+
+[updat self]
+git commit -am "clean"
+git push
+
+git rm -r --cached .
